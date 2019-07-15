@@ -90,9 +90,9 @@ namespace Deber1
 				string path = @"C:\Prueba\ArchivoRegistro.txt";
 				//StreamReader lecturaArchivo = File.OpenText(path);
 				string[] lecturaArchivo = File.ReadAllLines(path);
-				for (int i = 0; i < lecturaArchivo.Length; i++) 
+				for (int i = 0; i < lecturaArchivo.Length; i++)
 				{
-					
+					dgvRegistros.Rows[i].Cells[1].Value = lecturaArchivo[i];
 				}
 				/*for (int i = 0; i < 4; i++)
 				{

@@ -95,7 +95,7 @@ namespace Deber1
 			this.Pais});
 			this.dgvRegistros.Location = new System.Drawing.Point(12, 184);
 			this.dgvRegistros.Name = "dgvRegistros";
-			this.dgvRegistros.Size = new System.Drawing.Size(549, 64);
+			this.dgvRegistros.Size = new System.Drawing.Size(592, 87);
 			this.dgvRegistros.TabIndex = 9;
 			// 
 			// ID
@@ -205,7 +205,7 @@ namespace Deber1
 			// btnListar
 			// 
 			this.btnListar.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-			this.btnListar.Location = new System.Drawing.Point(456, 155);
+			this.btnListar.Location = new System.Drawing.Point(499, 155);
 			this.btnListar.Name = "btnListar";
 			this.btnListar.Size = new System.Drawing.Size(105, 23);
 			this.btnListar.TabIndex = 8;
@@ -250,7 +250,7 @@ namespace Deber1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(573, 260);
+			this.ClientSize = new System.Drawing.Size(616, 283);
 			this.Controls.Add(this.btnEliminar);
 			this.Controls.Add(this.btnEditar);
 			this.Controls.Add(this.label6);
