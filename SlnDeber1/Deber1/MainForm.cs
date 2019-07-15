@@ -2,7 +2,7 @@
  * Created by SharpDevelop.
  * User: andre
  * Date: 14/7/2019
- * Time: 20:24
+ * Time: 14:04
  * 
  * To change this template use Tools | Options | Coding | Edit Standard Headers.
  */
@@ -12,7 +12,7 @@ using System.Drawing;
 using System.Windows.Forms;
 using System.IO;
 
-namespace Deber
+namespace Deber1
 {
 	/// <summary>
 	/// Description of MainForm.
@@ -30,11 +30,15 @@ namespace Deber
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
 		}
+		void MainFormLoad(object sender, EventArgs e)
+		{
+	
+		}
 		void Escribir(string tipo, DataGridView dgv)
 		{
 			int posicionNuevoLog = dgv.Rows.Add();
 			dgv.Rows[posicionNuevoLog].Cells[0].Value = tipo;
-			if(tipo == "error")
+			if(tipo == "Error")
 			{
 				dgv.Rows[posicionNuevoLog].Cells[0].Style.BackColor = Color.Red;	
 			}
@@ -78,14 +82,15 @@ namespace Deber
 				string path = @"C:\Prueba\ArchivoRegistro.txt";
 				//StreamReader lecturaArchivo = File.OpenText(path);
 				string[] lecturaArchivo = File.ReadAllLines(path);
-				for (int i = 1; i < 5; i++) 
+				for (int i = 0; i < 4; i++) 
 				{
-					for (int j = 0; j < 5; j++) 
-					{
-						dgvRegistros.Rows[0].Cells[i].Value = lecturaArchivo[j];		
-					}
+					dgvRegistros.Rows[0].Cells[i+1].Value = lecturaArchivo[i];
 				}
-				
+				/*
+				dgvRegistros.Rows[0].Cells[1].Value = lecturaArchivo[0];
+				dgvRegistros.Rows[0].Cells[2].Value = lecturaArchivo[1];
+				dgvRegistros.Rows[0].Cells[3].Value = lecturaArchivo[2];
+				dgvRegistros.Rows[0].Cells[4].Value = lecturaArchivo[3];*/
 			}
 			catch(Exception)
 			{

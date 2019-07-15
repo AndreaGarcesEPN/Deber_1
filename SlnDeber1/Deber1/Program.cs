@@ -2,14 +2,14 @@
  * Created by SharpDevelop.
  * User: andre
  * Date: 14/7/2019
- * Time: 20:24
+ * Time: 14:04
  * 
  * To change this template use Tools | Options | Coding | Edit Standard Headers.
  */
 using System;
 using System.Windows.Forms;
 
-namespace Deber
+namespace Deber1
 {
 	/// <summary>
 	/// Class with program entry point.

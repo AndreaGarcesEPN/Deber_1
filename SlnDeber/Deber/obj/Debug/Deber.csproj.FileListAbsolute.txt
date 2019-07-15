@@ -1,8 +1,0 @@
-C:\Programación\Deber_1\SlnDeber\Deber\obj\Debug\Deber.csprojResolveAssemblyReference.cache
-C:\Programación\Deber_1\SlnDeber\Deber\obj\Debug\Deber.MainForm.resources
-C:\Programación\Deber_1\SlnDeber\Deber\obj\Debug\Deber.csproj.GenerateResource.Cache
-C:\Programación\Deber_1\SlnDeber\Deber\bin\Debug\Deber.exe.config
-C:\Programación\Deber_1\SlnDeber\Deber\bin\Debug\Deber.exe
-C:\Programación\Deber_1\SlnDeber\Deber\bin\Debug\Deber.pdb
-C:\Programación\Deber_1\SlnDeber\Deber\obj\Debug\Deber.exe
-C:\Programación\Deber_1\SlnDeber\Deber\obj\Debug\Deber.pdb
