@@ -1,8 +1,0 @@
-C:\Users\andre\Documents\SharpDevelop Projects\SlnDeber1\Deber1\bin\Debug\Deber1.exe.config
-C:\Users\andre\Documents\SharpDevelop Projects\SlnDeber1\Deber1\bin\Debug\Deber1.exe
-C:\Users\andre\Documents\SharpDevelop Projects\SlnDeber1\Deber1\bin\Debug\Deber1.pdb
-C:\Users\andre\Documents\SharpDevelop Projects\SlnDeber1\Deber1\obj\Debug\Deber1.csprojResolveAssemblyReference.cache
-C:\Users\andre\Documents\SharpDevelop Projects\SlnDeber1\Deber1\obj\Debug\Deber1.MainForm.resources
-C:\Users\andre\Documents\SharpDevelop Projects\SlnDeber1\Deber1\obj\Debug\Deber1.csproj.GenerateResource.Cache
-C:\Users\andre\Documents\SharpDevelop Projects\SlnDeber1\Deber1\obj\Debug\Deber1.exe
-C:\Users\andre\Documents\SharpDevelop Projects\SlnDeber1\Deber1\obj\Debug\Deber1.pdb

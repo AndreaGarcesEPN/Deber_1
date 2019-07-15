@@ -2,7 +2,7 @@
  * Created by SharpDevelop.
  * User: andre
  * Date: 14/7/2019
- * Time: 14:04
+ * Time: 20:24
  * 
  * To change this template use Tools | Options | Coding | Edit Standard Headers.
  */
@@ -12,7 +12,7 @@ using System.Drawing;
 using System.Windows.Forms;
 using System.IO;
 
-namespace Deber1
+namespace Deber
 {
 	/// <summary>
 	/// Description of MainForm.
@@ -29,10 +29,6 @@ namespace Deber1
 			//
 			// TODO: Add constructor code after the InitializeComponent() call.
 			//
-		}
-		void MainFormLoad(object sender, EventArgs e)
-		{
-	
 		}
 		void Escribir(string tipo, DataGridView dgv)
 		{
