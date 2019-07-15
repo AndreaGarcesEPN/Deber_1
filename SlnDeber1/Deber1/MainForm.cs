@@ -49,6 +49,7 @@ namespace Deber1
 		}
 		void BtnAgregarClick(object sender, EventArgs e)
 		{	
+			string id = txbID.Text;
 			string personaje = txbPersonaje.Text;
 			string fnacimiento = txbNacimiento.Text;
 			string fmuerte = txbMuerte.Text;
@@ -56,13 +57,19 @@ namespace Deber1
 			try
 			{
 				string path = @"C:\Prueba\ArchivoRegistro.txt";
-				//string datosRegistro = personaje + "-" + fnacimiento+ "-" + fmuerte + "-" + origen + "/n";
-				StreamWriter escritura = File.CreateText(path);
+				string datosRegistro = id + "-" + personaje + "-" + fnacimiento+ "-" + fmuerte + "-" + origen + "/n";
+				
+				/*StreamWriter escritura = File.CreateText(path);
 				escritura.WriteLine(personaje);
 				escritura.WriteLine(fnacimiento);
 				escritura.WriteLine(fmuerte);
 				escritura.WriteLine(origen);
-				escritura.Close();
+				escritura.Close();*/
+				
+				using (StreamWriter nuevoRegistro = File.AppendText(path)) 
+        		{
+	            	nuevoRegistro.WriteLine(datosRegistro);
+	        	}
 			}
 			catch(Exception)
 			{
@@ -72,6 +79,7 @@ namespace Deber1
 		}
 		void BtnListarClick(object sender, EventArgs e)
 		{
+			string id = txbID.Text;
 			string personaje = txbPersonaje.Text;
 			string fnacimiento = txbNacimiento.Text;
 			string fmuerte = txbMuerte.Text;
@@ -82,15 +90,14 @@ namespace Deber1
 				string path = @"C:\Prueba\ArchivoRegistro.txt";
 				//StreamReader lecturaArchivo = File.OpenText(path);
 				string[] lecturaArchivo = File.ReadAllLines(path);
-				for (int i = 0; i < 4; i++) 
+				for (int i = 0; i < lecturaArchivo.Length; i++) 
+				{
+					
+				}
+				/*for (int i = 0; i < 4; i++)
 				{
 					dgvRegistros.Rows[0].Cells[i+1].Value = lecturaArchivo[i];
-				}
-				/*
-				dgvRegistros.Rows[0].Cells[1].Value = lecturaArchivo[0];
-				dgvRegistros.Rows[0].Cells[2].Value = lecturaArchivo[1];
-				dgvRegistros.Rows[0].Cells[3].Value = lecturaArchivo[2];
-				dgvRegistros.Rows[0].Cells[4].Value = lecturaArchivo[3];*/
+				}*/
 			}
 			catch(Exception)
 			{
