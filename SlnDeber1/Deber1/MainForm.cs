@@ -92,6 +92,7 @@ namespace Deber1
 				string[] lecturaArchivo = File.ReadAllLines(path);
 				for (int i = 0; i < lecturaArchivo.Length; i++)
 				{
+					lecturaArchivo[i].Split('-');
 					dgvRegistros.Rows[i].Cells[1].Value = lecturaArchivo[i];
 				}
 				/*for (int i = 0; i < 4; i++)
@@ -100,6 +101,46 @@ namespace Deber1
 				}*/
 			}
 			catch(Exception)
+			{
+				Escribir("Error", dgvRegistros);
+			}
+		}
+		void BtnEditarClick(object sender, EventArgs e)
+		{
+			try
+			{
+				string id = txbID.Text;
+				string path = @"C:\Prueba\ArchivoRegistro.txt";
+				string[] lecturaArchivo = File.ReadAllLines(path);
+				int idnum = Int32.Parse(id);
+				lecturaArchivo[idnum].Remove(0, lecturaArchivo[idnum].Length);
+				string personaje = txbPersonaje.Text;
+				string fnacimiento = txbNacimiento.Text;
+				string fmuerte = txbMuerte.Text;
+				string origen = txbOrigen.Text;
+				string datosRegistro = id + "-" + personaje + "-" + fnacimiento+ "-" + fmuerte + "-" + origen + "/n";
+				
+				using (StreamWriter nuevoRegistro = File.AppendText(path)) 
+        		{
+	            	nuevoRegistro.WriteLine(datosRegistro);
+	        	}
+			}
+			catch
+			{
+				Escribir("Error", dgvRegistros);
+			}
+		}
+		void BtnEliminarClick(object sender, EventArgs e)
+		{
+			try
+			{
+				string id = txbID.Text;
+				string path = @"C:\Prueba\ArchivoRegistro.txt";
+				string[] lecturaArchivo = File.ReadAllLines(path);
+				int idnum = Int32.Parse(id);
+				lecturaArchivo[idnum].Remove(0, lecturaArchivo[idnum].Length);
+			}
+			catch
 			{
 				Escribir("Error", dgvRegistros);
 			}

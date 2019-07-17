@@ -236,6 +236,7 @@ namespace Deber1
 			this.btnEditar.TabIndex = 6;
 			this.btnEditar.Text = "Editar Personaje";
 			this.btnEditar.UseVisualStyleBackColor = true;
+			this.btnEditar.Click += new System.EventHandler(this.BtnEditarClick);
 			// 
 			// btnEliminar
 			// 
@@ -245,6 +246,7 @@ namespace Deber1
 			this.btnEliminar.TabIndex = 7;
 			this.btnEliminar.Text = "Eliminar Personaje";
 			this.btnEliminar.UseVisualStyleBackColor = true;
+			this.btnEliminar.Click += new System.EventHandler(this.BtnEliminarClick);
 			// 
 			// MainForm
 			// 
