@@ -57,19 +57,20 @@ namespace Deber1
 			try
 			{
 				string path = @"C:\Prueba\ArchivoRegistro.txt";
-				string datosRegistro = id + "-" + personaje + "-" + fnacimiento+ "-" + fmuerte + "-" + origen + "/n";
+				//string datosRegistro = id + "-" + personaje + "-" + fnacimiento+ "-" + fmuerte + "-" + origen + "/n";
 				
-				/*StreamWriter escritura = File.CreateText(path);
+				StreamWriter escritura = File.CreateText(path);
+				escritura.WriteLine(id);
 				escritura.WriteLine(personaje);
 				escritura.WriteLine(fnacimiento);
 				escritura.WriteLine(fmuerte);
 				escritura.WriteLine(origen);
-				escritura.Close();*/
+				escritura.Close();
 				
-				using (StreamWriter nuevoRegistro = File.AppendText(path)) 
+				/*using (StreamWriter nuevoRegistro = File.AppendText(path)) 
         		{
 	            	nuevoRegistro.WriteLine(datosRegistro);
-	        	}
+	        	}*/
 			}
 			catch(Exception)
 			{
@@ -90,15 +91,15 @@ namespace Deber1
 				string path = @"C:\Prueba\ArchivoRegistro.txt";
 				//StreamReader lecturaArchivo = File.OpenText(path);
 				string[] lecturaArchivo = File.ReadAllLines(path);
-				for (int i = 0; i < lecturaArchivo.Length; i++)
+				/*for (int i = 0; i < lecturaArchivo.Length; i++)
 				{
 					lecturaArchivo[i].Split('-');
 					dgvRegistros.Rows[i].Cells[1].Value = lecturaArchivo[i];
-				}
-				/*for (int i = 0; i < 4; i++)
-				{
-					dgvRegistros.Rows[0].Cells[i+1].Value = lecturaArchivo[i];
 				}*/
+				for (int i = 0; i < lecturaArchivo.Length; i++)
+				{
+					dgvRegistros.Rows[0].Cells[i].Value = lecturaArchivo[i];
+				}
 			}
 			catch(Exception)
 			{

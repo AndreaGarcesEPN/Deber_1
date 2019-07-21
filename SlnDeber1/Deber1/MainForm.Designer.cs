@@ -252,6 +252,7 @@ namespace Deber1
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+			this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
 			this.ClientSize = new System.Drawing.Size(616, 283);
 			this.Controls.Add(this.btnEliminar);
 			this.Controls.Add(this.btnEditar);
@@ -270,7 +271,7 @@ namespace Deber1
 			this.Controls.Add(this.txbPersonaje);
 			this.Controls.Add(this.dgvRegistros);
 			this.Name = "MainForm";
-			this.Text = "Deber1";
+			this.Text = "Personajes Históricos";
 			this.Load += new System.EventHandler(this.MainFormLoad);
 			((System.ComponentModel.ISupportInitialize)(this.dgvRegistros)).EndInit();
 			this.ResumeLayout(false);
