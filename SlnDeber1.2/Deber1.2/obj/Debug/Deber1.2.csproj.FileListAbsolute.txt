@@ -1,0 +1,8 @@
+C:\Programación\Deber_1\SlnDeber1.2\Deber1.2\bin\Debug\Deber1.2.exe.config
+C:\Programación\Deber_1\SlnDeber1.2\Deber1.2\bin\Debug\Deber1.2.exe
+C:\Programación\Deber_1\SlnDeber1.2\Deber1.2\bin\Debug\Deber1.2.pdb
+C:\Programación\Deber_1\SlnDeber1.2\Deber1.2\obj\Debug\Deber1.2.csprojResolveAssemblyReference.cache
+C:\Programación\Deber_1\SlnDeber1.2\Deber1.2\obj\Debug\Deber1._.MainForm.resources
+C:\Programación\Deber_1\SlnDeber1.2\Deber1.2\obj\Debug\Deber1.2.csproj.GenerateResource.Cache
+C:\Programación\Deber_1\SlnDeber1.2\Deber1.2\obj\Debug\Deber1.2.exe
+C:\Programación\Deber_1\SlnDeber1.2\Deber1.2\obj\Debug\Deber1.2.pdb

@@ -57,19 +57,20 @@ namespace Deber1
 			try
 			{
 				string path = @"C:\Prueba\ArchivoRegistro.txt";
-				//string datosRegistro = id + "-" + personaje + "-" + fnacimiento+ "-" + fmuerte + "-" + origen + "/n";
+				string datosRegistro = id + "-" + personaje + "-" + fnacimiento+ "-" + fmuerte + "-" + origen + "/n";
 				
 				StreamWriter escritura = File.CreateText(path);
-				escritura.WriteLine(id);
+				escritura.WriteLine(datosRegistro);
+				/*escritura.WriteLine(id);
 				escritura.WriteLine(personaje);
 				escritura.WriteLine(fnacimiento);
 				escritura.WriteLine(fmuerte);
-				escritura.WriteLine(origen);
+				escritura.WriteLine(origen);*/
 				escritura.Close();
 				
 				/*using (StreamWriter nuevoRegistro = File.AppendText(path)) 
         		{
-	            	nuevoRegistro.WriteLine(datosRegistro);
+	            	nuevoRegistro.WriteLine(daPruebatosRegistro);
 	        	}*/
 			}
 			catch(Exception)
